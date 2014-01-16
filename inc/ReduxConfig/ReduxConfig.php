@@ -19,15 +19,15 @@ if ( !class_exists( "ReduxFramework" ) ) {
 	return;
 } 
 
-if ( !class_exists( "PrsoPluginFrameworkOptionConfig" ) ) {
-	class PrsoPluginFrameworkOptionConfig {
+if ( !class_exists( "[*PRSOPLUGINFRAMEWORK_OPTIONS_CLASS*]" ) ) {
+	class [*PRSOPLUGINFRAMEWORK_OPTIONS_CLASS*] {
 
 		public $args = array();
 		public $sections = array();
 		public $theme;
 		public $ReduxFramework;
-		public $text_domain 	= PRSOPLUGINFRAMEWORK__DOMAIN;
-		public $options_name 	= PRSOPLUGINFRAMEWORK__OPTIONS_NAME;
+		public $text_domain 	= [*PRSOPLUGINFRAMEWORKCONTSTANT*]__DOMAIN;
+		public $options_name 	= [*PRSOPLUGINFRAMEWORKCONTSTANT*]__OPTIONS_NAME;
 
 		public function __construct( ) {
 
@@ -1440,7 +1440,7 @@ if ( !class_exists( "PrsoPluginFrameworkOptionConfig" ) ) {
 	            'menu_icon'          	=> '', // Specify a custom URL to an icon
 	            'last_tab'           	=> '', // Force your panel to always open to a specific tab (by id)
 	            'page_icon'          	=> 'icon-themes', // Icon displayed in the admin panel next to your menu_title
-	            'page_slug'          	=> '_options', // Page slug used to denote the panel
+	            'page_slug'          	=> $this->options_name.'_options', // Page slug used to denote the panel
 	            'save_defaults'      	=> true, // On load save the defaults to DB before user clicks save or not
 	            'default_show'       	=> false, // If true, shows the default value next to each field that is not the default value.
 	            'default_mark'       	=> '', // What to print by the field's title if the value shown is default. Suggested: *
@@ -1508,7 +1508,7 @@ if ( !class_exists( "PrsoPluginFrameworkOptionConfig" ) ) {
 
 		}
 	}
-	new PrsoPluginFrameworkOptionConfig();
+	new [*PRSOPLUGINFRAMEWORK_OPTIONS_CLASS*]();
 
 }
 

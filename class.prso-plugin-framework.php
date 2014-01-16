@@ -1,12 +1,12 @@
 <?php
-class PrsoPluginFramework {
+class [*PRSOPLUGINFRAMEWORK_CLASS*] {
 	
 	protected static $class_config 				= array();
 	protected $current_screen					= NULL;
-	protected $plugin_ajax_nonce				= 'prso-plugin-framework-ajax-nonce';
-	protected $plugin_path						= PRSOPLUGINFRAMEWORK__PLUGIN_DIR;
-	protected $plugin_url						= PRSOPLUGINFRAMEWORK__PLUGIN_URL;
-	protected $plugin_textdomain				= PRSOPLUGINFRAMEWORK__DOMAIN;
+	protected $plugin_ajax_nonce				= '[*PRSOPLUGINFRAMEWORK_SLUG*]-ajax-nonce';
+	protected $plugin_path						= [*PRSOPLUGINFRAMEWORKCONTSTANT*]__PLUGIN_DIR;
+	protected $plugin_url						= [*PRSOPLUGINFRAMEWORKCONTSTANT*]__PLUGIN_URL;
+	protected $plugin_textdomain				= [*PRSOPLUGINFRAMEWORKCONTSTANT*]__DOMAIN;
 	
 	function __construct( $config = array() ) {
 		
