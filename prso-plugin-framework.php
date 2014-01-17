@@ -49,10 +49,10 @@
 //Define plugin constants
 define( '[*PRSOPLUGINFRAMEWORKCONTSTANT*]__MINIMUM_WP_VERSION', '3.0' );
 define( '[*PRSOPLUGINFRAMEWORKCONTSTANT*]__VERSION', '1.0' );
-define( '[*PRSOPLUGINFRAMEWORKCONTSTANT*]__DOMAIN', '[*PRSOPLUGINFRAMEWORK_SLUG*]-plugin' );
+define( '[*PRSOPLUGINFRAMEWORKCONTSTANT*]__DOMAIN', '[*PRSOPLUGINFRAMEWORK_SLUG*]_plugin' );
 
 //Plugin admin options will be available in global var with this name, also is database slug for options
-define( '[*PRSOPLUGINFRAMEWORKCONTSTANT*]__OPTIONS_NAME', '[*PRSOPLUGINFRAMEWORK_SLUG*]-options' );
+define( '[*PRSOPLUGINFRAMEWORKCONTSTANT*]__OPTIONS_NAME', '[*PRSOPLUGINFRAMEWORK_SLUG*]_options' );
 
 define( '[*PRSOPLUGINFRAMEWORKCONTSTANT*]__PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( '[*PRSOPLUGINFRAMEWORKCONTSTANT*]__PLUGIN_URL', plugin_dir_url( __FILE__ ) );
