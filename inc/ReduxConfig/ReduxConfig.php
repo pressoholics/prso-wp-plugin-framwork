@@ -1435,6 +1435,7 @@ if ( !class_exists( "[*PRSOPLUGINFRAMEWORK_OPTIONS_CLASS*]" ) ) {
 
 	            // OPTIONAL -> Give you extra features
 	            'page_priority'      	=> null, // Order where the menu appears in the admin area. If there is any conflict, something will not show. Warning.
+	            'page_type'   			=> 'menu', // set to “menu” for a top level menu, or “submenu” to add below an existing item
 	            'page_parent'        	=> 'themes.php', // For a full list of options, visit: http://codex.wordpress.org/Function_Reference/add_submenu_page#Parameters
 	            'page_permissions'   	=> 'manage_options', // Permissions needed to access the options panel.
 	            'menu_icon'          	=> '', // Specify a custom URL to an icon
